@@ -30,7 +30,7 @@ export default function TestimonialsSection() {
     },
     {
       quote:
-        "Brillance has revolutionized how we handle custom contracts. The automation saves us hours every week and eliminates errors completely.",
+        "Cight has revolutionized how our accessibility kiosks operate. The real-time transcripts save us hours every week and eliminate confusion completely.",
       name: "Sarah Chen",
       company: "VP Operations, TechFlow",
       image:

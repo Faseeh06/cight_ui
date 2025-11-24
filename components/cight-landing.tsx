@@ -1,9 +1,11 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
+import { useRouter } from "next/navigation"
 import Orb from "./orb"
 
 export default function CightLanding() {
+  const router = useRouter()
   const [isMounted, setIsMounted] = useState(false)
   const [transcript, setTranscript] = useState("")
   const [isListening, setIsListening] = useState(false)
@@ -107,20 +109,19 @@ export default function CightLanding() {
 
         {/* Main Content */}
         <div
-          className="w-full max-w-[1000px] flex flex-col items-center justify-start px-4 sm:px-8 py-8 cursor-pointer h-[calc(100vh-160px)] relative"
+          className="w-full max-w-[1000px] flex flex-col items-center justify-start px-4 sm:px-8 py-8 cursor-pointer min-h-[calc(100vh-200px)] relative"
           onClick={toggleListening}
           role="button"
           tabIndex={0}
           aria-label={isListening ? "Click to stop listening" : "Click to start listening"}
         >
-          <div className="fixed top-[140px] sm:top-[160px] left-1/2 -translate-x-1/2 z-20 flex justify-center items-center">
-            <div className="relative w-[220px] h-[220px] sm:w-[280px] sm:h-[280px]">
-              <Orb hue={0} hoverIntensity={0.3} rotateOnHover forceHoverState={isListening} />
-              {isListening && <div className="absolute inset-0 rounded-full bg-gradient-to-b from-purple-500/10 to-pink-500/10 blur-3xl -z-10" />}
-            </div>
+          <div className="relative w-[240px] h-[240px] sm:w-[320px] sm:h-[320px] mb-12 flex items-center justify-center">
+            <Orb hue={0} hoverIntensity={0.4} rotateOnHover forceHoverState={isListening} />
+            <div className="absolute inset-0 rounded-full border-[12px] border-white/40 pointer-events-none mix-blend-multiply"></div>
+            {isListening && <div className="absolute inset-0 rounded-full bg-gradient-to-b from-purple-500/20 to-pink-500/20 blur-3xl -z-10" />}
           </div>
 
-          <div className="w-full flex flex-col items-center gap-10 sm:gap-12 pt-[360px]">
+          <div className="w-full flex flex-col items-center gap-10 sm:gap-12">
 
           {!isListening && !transcript && !interimTranscript && (
             <div className="text-center">

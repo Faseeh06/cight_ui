@@ -9,9 +9,9 @@ interface FAQItem {
 
 const faqData: FAQItem[] = [
   {
-    question: "What is Brillance and who is it for?",
+    question: "What is Cight and who is it for?",
     answer:
-      "Brillance is a comprehensive billing automation platform designed for businesses that need custom contract management. It's perfect for SaaS companies, service providers, and enterprises looking to streamline their billing processes.",
+      "Cight is a voice-first accessibility suite that converts speech into large, legible text instantly. It's perfect for visually impaired users, public installations, and anyone who needs clear, immediate transcripts.",
   },
   {
     question: "How does the custom contract billing work?",
@@ -19,9 +19,9 @@ const faqData: FAQItem[] = [
       "Our platform automatically processes your custom contracts, calculates billing amounts based on your specific terms, and generates invoices. You can set up complex pricing structures, usage-based billing, and custom billing cycles.",
   },
   {
-    question: "Can I integrate Brillance with my existing tools?",
+    question: "Can I integrate Cight with my existing tools?",
     answer:
-      "Yes! Brillance integrates seamlessly with popular CRM systems, accounting software, and payment processors. We support APIs and webhooks for custom integrations with your existing workflow.",
+      "Yes! Cight can be embedded into kiosk flows, web apps, or accessibility stations. We support APIs and webhooks for custom integrations inside your current workflow.",
   },
   {
     question: "What kind of support do you provide?",
@@ -29,12 +29,12 @@ const faqData: FAQItem[] = [
       "We offer 24/7 customer support, dedicated account managers for enterprise clients, comprehensive documentation, and onboarding assistance to help you get started quickly.",
   },
   {
-    question: "Is my data secure with Brillance?",
+    question: "Is my data secure with Cight?",
     answer:
       "Absolutely. We use enterprise-grade security measures including end-to-end encryption, SOC 2 compliance, and regular security audits. Your data is stored in secure, redundant data centers.",
   },
   {
-    question: "How do I get started with Brillance?",
+    question: "How do I get started with Cight?",
     answer:
       "Getting started is simple! Sign up for our free trial, connect your existing systems, and our onboarding team will help you set up your first custom billing workflow within 24 hours.",
   },

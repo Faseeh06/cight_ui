@@ -19,9 +19,8 @@ const instrumentSerif = Instrument_Serif({
 })
 
 export const metadata: Metadata = {
-  title: "Brillance - Effortless Custom Contract Billing",
-  description:
-    "Streamline your billing process with seamless automation for every custom contract, tailored by Brillance.",
+  title: "Cight - Voice-first Accessibility Suite",
+  description: "Turn every spoken word into text instantly with Cight.",
 }
 
 export default function RootLayout({
